@@ -23,11 +23,11 @@ function RouteGuard({ children }: { children: React.ReactNode }) {
 export default function RootLayout() {
   return (
     <AuthProvider>
-      {/* <RouteGuard> */}
+      <RouteGuard>
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       </Stack>
-      {/* </RouteGuard> */}
+      </RouteGuard>
     </AuthProvider>
   );
 }
